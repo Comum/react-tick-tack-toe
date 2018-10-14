@@ -7,10 +7,10 @@ import PlayingPlayer from './PlayingPlayer/PlayingPlayer'
 // style
 import './Header.css'
 
-const Header = () => (
+const Header = ({ player }) => (
     <div className="header">
         <Score />
-        <PlayingPlayer />
+        <PlayingPlayer player={player} />
     </div>
 )
 

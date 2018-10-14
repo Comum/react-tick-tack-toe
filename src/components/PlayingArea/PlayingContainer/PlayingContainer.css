@@ -20,6 +20,10 @@
     height: 33.3%;
 }
 
+.playingContainer--rowsContainer > li > div {
+    cursor: pointer;
+}
+
 .playingContainer--itemContainer {
     display: flex;
     flex-direction: row;

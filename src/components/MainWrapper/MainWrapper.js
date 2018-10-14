@@ -7,9 +7,9 @@ import PlayingArea from '../PlayingArea/PlayingArea'
 // style
 import './MainWrapper.css'
 
-const MainWrapper = () => (
+const MainWrapper = ({ player }) => (
     <div className="mainWrapper">
-        <Header />
+        <Header player={player} />
         <PlayingArea />
     </div>
 )
