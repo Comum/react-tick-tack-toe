@@ -7,9 +7,13 @@ import PlayingArea from '../PlayingArea/PlayingArea'
 // style
 import './MainWrapper.css'
 
-const MainWrapper = ({ player, onClickPlayingArea }) => (
+const MainWrapper = ({ player, turn, gameOver, onClickPlayingArea }) => (
     <div className="mainWrapper">
-        <Header player={player} />
+        <Header
+            player={player}
+            turn={turn}
+            gameOver={gameOver}
+            />
         <PlayingArea onClickPlayingArea={onClickPlayingArea} />
     </div>
 )
