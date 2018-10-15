@@ -11,21 +11,22 @@ class App extends Component {
   }
 
   onClickPlayingArea = () => {
-    let newPlayer = 1
+    let newPlayer = this.state.player === 1 ? 2 : 1
     let newTurn = this.state.turn
     let isGameOver = false
-
-    if (this.state.player === 1) {
-      newPlayer = 2
-    }
 
     if (this.state.turn === 9) {
       isGameOver = true
     }
 
-    if (!isGameOver) {
-      newTurn = newTurn + 1
+    if (isGameOver) {
+      this.setState({
+        gameOver: isGameOver,
+      })
+      return
     }
+
+    newTurn = newTurn + 1
 
     this.setState({
       player: newPlayer,
