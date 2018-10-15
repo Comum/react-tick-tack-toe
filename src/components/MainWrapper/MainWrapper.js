@@ -7,10 +7,10 @@ import PlayingArea from '../PlayingArea/PlayingArea'
 // style
 import './MainWrapper.css'
 
-const MainWrapper = ({ player }) => (
+const MainWrapper = ({ player, onClickPlayingArea }) => (
     <div className="mainWrapper">
         <Header player={player} />
-        <PlayingArea />
+        <PlayingArea onClickPlayingArea={onClickPlayingArea} />
     </div>
 )
 

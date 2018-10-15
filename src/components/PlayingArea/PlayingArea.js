@@ -5,9 +5,9 @@ import PlayingContainer from './PlayingContainer/PlayingContainer'
 // style
 import './PlayingArea.css'
 
-const PlayingArea = () => (
+const PlayingArea = ({ onClickPlayingArea }) => (
     <div className="playingArea">
-        <PlayingContainer />
+        <PlayingContainer onClickPlayingArea={onClickPlayingArea} />
     </div>
 )
 

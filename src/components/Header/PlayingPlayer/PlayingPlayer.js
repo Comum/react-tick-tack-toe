@@ -3,9 +3,9 @@ import React from 'react'
 // style
 import './PlayingPlayer.css'
 
-const PlayingPlayer = () => (
+const PlayingPlayer = ({ player }) => (
     <div className="playingPlayer">
-        Player
+        Player {player}
     </div>
 )
 
